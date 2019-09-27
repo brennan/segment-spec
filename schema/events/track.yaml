@@ -1,0 +1,12 @@
+"$id": "schema/fields/events/track"
+"$schema": http://json-schema.org/draft-07/schema#
+title: Track
+allOf:
+- "$ref": ../fields/common.json
+- properties:
+    type:
+      const: track
+    event:
+      description: The name of the event
+      type: string
+type: object

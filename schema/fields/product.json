@@ -1,0 +1,44 @@
+{
+  "$id": "/fields/product.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Product",
+  "properties": {
+    "product_id": {
+      "type": "string"
+    },
+    "sku": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "brand": {
+      "type": "string"
+    },
+    "variant": {
+      "type": "string"
+    },
+    "price": {
+      "type": "number"
+    },
+    "quantity": {
+      "type": "number"
+    },
+    "coupon": {
+      "type": "string"
+    },
+    "position": {
+      "type": "number"
+    },
+    "url": {
+      "type": "string"
+    },
+    "image_url": {
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

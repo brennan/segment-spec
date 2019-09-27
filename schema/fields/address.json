@@ -1,0 +1,24 @@
+{
+  "$id": "/fields/address.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Address",
+  "description": "Street address of a user optionally containing: city, country, postalCode, state or street",
+  "properties": {
+    "city": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "postalCode": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "street": {
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,15 @@
+{
+  "$id": "/fields/library.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Library",
+  "description": "Dictionary of information about the library making the requests to the API, containing name and version.",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

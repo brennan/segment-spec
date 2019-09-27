@@ -1,0 +1,27 @@
+{
+  "$id": "/fields/location.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Location",
+  "description": "Dictionary of information about the user’s current location, containing city, country, latitude, longitude, region and speed",
+  "properties": {
+    "city": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "number"
+    },
+    "longitude": {
+      "type": "number"
+    },
+    "region": {
+      "type": "string"
+    },
+    "speed": {
+      "type": "number"
+    }
+  },
+  "type": "object"
+}

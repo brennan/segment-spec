@@ -1,0 +1,21 @@
+{
+  "$id": "/fields/network.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Network",
+  "description": "Dictionary of information about the current network connection, containing bluetooth, carrier, cellular and wifi",
+  "properties": {
+    "bluetooth": {
+      "type": "boolean"
+    },
+    "carrier": {
+      "type": "string"
+    },
+    "cellular": {
+      "type": "boolean"
+    },
+    "wifi": {
+      "type": "boolean"
+    }
+  },
+  "type": "object"
+}

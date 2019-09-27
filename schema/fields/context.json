@@ -1,0 +1,65 @@
+{
+  "$id": "/fields/context.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Context",
+  "properties": {
+    "active": {
+      "type": "boolean",
+      "description": "Whether a user is active. This is usually used to flag an .identify() call to just update the traits but not “last seen.”"
+    },
+    "app": {
+      "$ref": "app.json"
+    },
+    "campaign": {
+      "$ref": "campaign.json"
+    },
+    "device": {
+      "$ref": "device.json"
+    },
+    "ip": {
+      "type": "string",
+      "description": "Current user’s IP address"
+    },
+    "library": {
+      "$ref": "library.json"
+    },
+    "locale": {
+      "type": "string",
+      "description": "Locale string for the current user, for example en-US"
+    },
+    "location": {
+      "$ref": "location.json"
+    },
+    "network": {
+      "$ref": "network.json"
+    },
+    "os": {
+      "$ref": "os.json"
+    },
+    "page": {
+      "$ref": "page.json"
+    },
+    "referrer": {
+      "$ref": "referrer.json"
+    },
+    "screen": {
+      "$ref": "screen.json"
+    },
+    "timezone": {
+      "type": "string",
+      "description": "Timezones are sent as tzdata strings to add user timezone information which might be stripped from the timestamp. Ex: America/New_York"
+    },
+    "groupId": {
+      "type": "string",
+      "description": "Group / Account ID. This is useful in B2B use cases where you need to attribute your non-group calls to a company or account. It is relied on by several Customer Success and CRM tools."
+    },
+    "traits": {
+      "$ref": "traits.json"
+    },
+    "userAgent": {
+      "type": "string",
+      "description": "User agent of the device making the request"
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,18 @@
+{
+  "$id": "/fields/screen.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Screen",
+  "description": "Dictionary of information about the device’s screen, containing density, height and width",
+  "properties": {
+    "density": {
+      "type": "number"
+    },
+    "height": {
+      "type": "number"
+    },
+    "width": {
+      "type": "number"
+    }
+  },
+  "type": "object"
+}

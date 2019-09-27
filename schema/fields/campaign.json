@@ -1,0 +1,24 @@
+{
+  "$id": "/fields/campaign.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "App",
+  "description": "Dictionary of information about the campaign that resulted in the API call, containing name, source, medium, term and content. This maps directly to the common UTM campaign parameters.",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "medium": {
+      "type": "string"
+    },
+    "term": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

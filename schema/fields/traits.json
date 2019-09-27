@@ -1,0 +1,73 @@
+{
+  "$id": "/fields/traits.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Traits",
+  "description": "Traits are pieces of information you know about a user that are included in an identify call. These could be demographics like age or gender, account-specific like plan, or even things like whether a user has seen a particular A/B test variation. Up to you!",
+  "properties": {
+    "address": {
+      "$ref": "address.json"
+    },
+    "age": {
+      "type": "number"
+    },
+    "avatar": {
+      "type": "string"
+    },
+    "birthday": {
+      "type": "string",
+      "description": "User’s birthday"
+    },
+    "company": {
+      "$ref": "company.json"
+    },
+    "createdAt": {
+      "type": "string",
+      "description": "Description of the user"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the user"
+    },
+    "email": {
+      "type": "string",
+      "description": "Email address of a user"
+    },
+    "firstName": {
+      "type": "string",
+      "description": "First name of a user"
+    },
+    "gender": {
+      "type": "string",
+      "description": "Gender of a user"
+    },
+    "id": {
+      "type": "string",
+      "description": "Unique ID in your database for a user"
+    },
+    "lastName": {
+      "type": "string",
+      "description": "Last name of a user"
+    },
+    "name": {
+      "type": "string",
+      "description": "Full name of a user. If you only pass a first and last name we’ll automatically fill in the full name for you."
+    },
+    "phone": {
+      "type": "string",
+      "description": "Phone number of a user"
+    },
+    "title": {
+      "type": "string",
+      "description": "Title of a user, usually related to their position at a specific company. Example: “VP of Engineering”"
+    },
+    "username": {
+      "type": "string",
+      "description": "User’s username. This should be unique to each user, like the usernames of Twitter or GitHub."
+    },
+    "website": {
+      "type": "string",
+      "description": "Website of a user"
+    }
+  },
+  "type": "object"
+}

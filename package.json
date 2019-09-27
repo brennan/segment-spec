@@ -1,0 +1,24 @@
+{
+  "name": "segment-event-spec",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon ./server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  },
+  "dependencies": {
+    "ajv": "^6.10.2",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "js-yaml": "^3.13.1",
+    "json-schema-ref-parser": "^7.1.1",
+    "swagger-client": "^3.9.4",
+    "swagger-ui-express": "^4.1.1"
+  }
+}

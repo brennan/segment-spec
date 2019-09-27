@@ -1,0 +1,241 @@
+{
+   "openapi": "3.0.1",
+   "info": {
+      "title": "Segment Event Spec",
+      "description": "",
+      "termsOfService": "",
+      "contact": {
+         "email": "info@segment.com"
+      },
+      "version": "1.0.0"
+   },
+   "externalDocs": {
+      "description": "Explore Segment's event spec.",
+      "url": "https://segment.com/docs/spec/"
+   },
+   "servers": [
+      {
+         "url": "https://api.segment.io/v1"
+      }
+   ],
+   "tags": [
+      {
+         "name": "track",
+         "description": "Send a track event to Segment.",
+         "externalDocs": {
+            "description": "Find out more",
+            "url": "https://www.segment.com/"
+         }
+      }
+   ],
+   "paths": {
+      "/group": {
+         "post": {
+            "tags": [
+               "group"
+            ],
+            "summary": "Send a group event.",
+            "requestBody": {
+               "description": "Group object to send to Segment.",
+               "content": {
+                  "application/json": {
+                     "schema": {
+                        "$ref": "#/components/schemas/Group"
+                     }
+                  }
+               }
+            },
+            "responses": {
+               "200": {
+                  "description": "Payload is valid JSON"
+               },
+               "400": {
+                  "description": "Payload is not valid JSON"
+               }
+            }
+         }
+      },
+      "/identify": {
+         "post": {
+            "tags": [
+               "identify"
+            ],
+            "summary": "Send an identify event.",
+            "requestBody": {
+               "description": "Identify object to send to Segment.",
+               "content": {
+                  "application/json": {
+                     "schema": {
+                        "$ref": "#/components/schemas/Identify"
+                     }
+                  }
+               }
+            },
+            "responses": {
+               "200": {
+                  "description": "Payload is valid JSON"
+               },
+               "400": {
+                  "description": "Payload is not valid JSON"
+               }
+            }
+         }
+      },
+      "/page": {
+         "post": {
+            "tags": [
+               "page"
+            ],
+            "summary": "Send a page event.",
+            "requestBody": {
+               "description": "Page object to send to Segment.",
+               "content": {
+                  "application/json": {
+                     "schema": {
+                        "$ref": "#/components/schemas/Page"
+                     }
+                  }
+               }
+            },
+            "responses": {
+               "200": {
+                  "description": "Payload is valid JSON"
+               },
+               "400": {
+                  "description": "Payload is not valid JSON"
+               }
+            }
+         }
+      },
+      "/screen": {
+         "post": {
+            "tags": [
+               "screen"
+            ],
+            "summary": "Send a screen event.",
+            "requestBody": {
+               "description": "Screen object to send to Segment.",
+               "content": {
+                  "application/json": {
+                     "schema": {
+                        "$ref": "#/components/schemas/Screen"
+                     }
+                  }
+               }
+            },
+            "responses": {
+               "200": {
+                  "description": "Payload is valid JSON"
+               },
+               "400": {
+                  "description": "Payload is not valid JSON"
+               }
+            }
+         }
+      },
+      "/track": {
+         "post": {
+            "tags": [
+               "track"
+            ],
+            "summary": "Send a track event.",
+            "requestBody": {
+               "description": "Track object to send to Segment.",
+               "content": {
+                  "application/json": {
+                     "schema": {
+                        "$ref": "#/components/schemas/Track"
+                     }
+                  }
+               }
+            },
+            "responses": {
+               "200": {
+                  "description": "Payload is valid JSON"
+               },
+               "400": {
+                  "description": "Payload is not valid JSON"
+               }
+            }
+         }
+      }
+   },
+   "components": {
+      "schemas": {
+         "Group": {
+            "type": "object",
+            "properties": {
+               "type": {
+                  "type": "string",
+                  "enum": [
+                     "group"
+                  ]
+               }
+            },
+            "required": [
+               "type"
+            ]
+         },
+         "Identify": {
+            "type": "object",
+            "properties": {
+               "type": {
+                  "type": "string",
+                  "enum": [
+                     "identify"
+                  ]
+               }
+            },
+            "required": [
+               "type"
+            ]
+         },
+         "Page": {
+            "type": "object",
+            "properties": {
+               "type": {
+                  "type": "string",
+                  "enum": [
+                     "page"
+                  ]
+               }
+            },
+            "required": [
+               "type"
+            ]
+         },
+         "Screen": {
+            "type": "object",
+            "properties": {
+               "type": {
+                  "type": "string",
+                  "enum": [
+                     "screen"
+                  ]
+               }
+            },
+            "required": [
+               "type"
+            ]
+         },
+         "Track": {
+            "type": "object",
+            "properties": {
+               "event": {
+                  "type": "string"
+               },
+               "type": {
+                  "type": "string",
+                  "enum": [
+                     "track"
+                  ]
+               }
+            },
+            "required": [
+               "event",
+               "type"
+            ]
+         }
+      }
+   }
+}

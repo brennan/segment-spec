@@ -1,0 +1,18 @@
+{
+  "$id": "/fields/app.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "App",
+  "description": "dictionary of information about the current application, containing name, version and build. This is collected automatically from our mobile libraries when possible.",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "build": {
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

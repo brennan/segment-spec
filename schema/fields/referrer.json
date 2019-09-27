@@ -1,0 +1,21 @@
+{
+  "$id": "/fields/referrer.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Referrer",
+  "description": "Dictionary of information about the way the user was referred to the website or app, containing type, name, url and link",
+  "properties": {
+    "type": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

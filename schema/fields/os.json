@@ -1,0 +1,15 @@
+{
+  "$id": "/fields/os.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "OS",
+  "description": "Dictionary of information about the operating system, containing name and version",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    }
+  },
+  "type": "object"
+}
